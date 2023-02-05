@@ -1,0 +1,3 @@
+interface Land {
+    int getNumberOfLegs();
+}
