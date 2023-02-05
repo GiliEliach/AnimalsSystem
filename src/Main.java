@@ -11,6 +11,7 @@ public class Main {
         Cat mitzi=new Cat(0);
         Frog frog=new Frog(1);
 
+
         System.out.println("Let's check Doggy:");
         doggy.sayHello();
         doggy.sayHello(0);
