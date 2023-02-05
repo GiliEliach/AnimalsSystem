@@ -4,7 +4,8 @@ class Cat extends Animal implements Land  {
         super(true,true,mood);
     }
     @Override
-    public void sayHello() {//reaction of cat by its mood
+    //reaction of cat by its mood
+    public void sayHello() {
         System.out.println("Meowing");
         if (this.mood == MOOD_HAPPY)
             System.out.println("Purring");
@@ -13,7 +14,8 @@ class Cat extends Animal implements Land  {
             System.out.println("Hissing");
     }
     @Override
-    public void sayHello(int mood) {//reaction of cat with input of mood
+    //reaction of cat with input of mood
+    public void sayHello(int mood) {
         try {
             if (mood == MOOD_HAPPY)
                 System.out.println("Purring");
@@ -28,6 +30,7 @@ class Cat extends Animal implements Land  {
             System.out.println(e.getMessage());
         }
     }
+    //getter
     public int getNumberOfLegs()
     {
         return this.numberOfLegs;

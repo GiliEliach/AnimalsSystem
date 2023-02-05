@@ -4,7 +4,8 @@ class Dog extends Animal implements Land  {
         super(true,true,mood);
     }
     @Override
-    public void sayHello() {//reaction of dog by its mood
+    //reaction of dog by its mood
+    public void sayHello() {
         System.out.println("Wagging tail");
         if (this.mood == MOOD_HAPPY)
             System.out.println("Barking loudly");
@@ -12,8 +13,8 @@ class Dog extends Animal implements Land  {
         if (this.mood == MOOD_SCARE)
             System.out.println("Whooping");
     }
-
-    public void sayHello(int mood) {//reaction of dog with input of mood
+    //reaction of dog with input of mood
+    public void sayHello(int mood) {
         try {
             if (mood == MOOD_HAPPY)
                 System.out.println("Barking loudly");
@@ -28,6 +29,7 @@ class Dog extends Animal implements Land  {
             System.out.println(e.getMessage());
         }
     }
+    //getter
     public int getNumberOfLegs()
     {
         return this.numberOfLegs;

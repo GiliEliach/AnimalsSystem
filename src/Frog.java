@@ -4,12 +4,13 @@ class Frog extends Animal implements Water {
     Frog(int mood) {
         super(false, false, mood);
     }
-
-    Frog() {//if we don't have the mood,intilaize with 0
+    //if we don't have the mood,initialize with 0
+    Frog() {
         super(false, false, 0);
     }
 
     @Override
+
     public void sayHello(int mood) {
         try {
             if (mood == MOOD_HAPPY)
@@ -22,7 +23,7 @@ class Frog extends Animal implements Water {
             System.out.println(e.getMessage());
         }
     }
-
+    //getters
     public boolean hasGills() {
         return false;
     }

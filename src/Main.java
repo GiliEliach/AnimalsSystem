@@ -6,10 +6,10 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        Dog rexi=new Dog(2);//should raise error because 2 for mood is not valid
+        Dog rex=new Dog(2);//should raise error because 2 for mood is not valid
         Dog doggy=new Dog(1);
         Cat mitzi=new Cat(0);
-        Frog frogi=new Frog(1);
+        Frog frog=new Frog(1);
 
         System.out.println("Let's check Doggy:");
         doggy.sayHello();
@@ -31,24 +31,24 @@ public class Main {
         mitzi.setCarnivorous(false);
         System.out.println("Is Mitzi a carnivorous? "+mitzi.isCarnivorous());
 
-        System.out.println("Let's check Frogi:");
+        System.out.println("Let's check Frog:");
         mitzi.sayHello();
         mitzi.sayHello(1);
 
-        System.out.println("How many legs Frogi has? "+ frogi.getNumberOfLegs());
-        System.out.println("Is Frogi a carnivorous? "+frogi.isCarnivorous());
-        System.out.println("Is Frogi a mammal? "+frogi.isMammals());
-        frogi.setMammals(true);
-        System.out.println("Is Frogi a mammal? "+frogi.isMammals());
-        System.out.println("Does Frogi have gills? "+frogi.hasGills());
-        System.out.println("Does Frogi lays eggs? "+frogi.hasLaysEggs());
+        System.out.println("How many legs Frog has? "+ frog.getNumberOfLegs());
+        System.out.println("Is Frog a carnivorous? "+frog.isCarnivorous());
+        System.out.println("Is Frog a mammal? "+frog.isMammals());
+        frog.setMammals(true);
+        System.out.println("Is Frog a mammal? "+frog.isMammals());
+        System.out.println("Does Frog have gills? "+frog.hasGills());
+        System.out.println("Does Frog lays eggs? "+frog.hasLaysEggs());
 
         System.out.println("Let's try polymorphism:");
         List<Animal> listOfAnimals=new ArrayList<>();
-        listOfAnimals.add(frogi);
+        listOfAnimals.add(frog);
         listOfAnimals.add(mitzi);
         listOfAnimals.add(doggy);
-        for (Animal a : listOfAnimals) {//should print "false true false true false true" because of the above changes
+        for (Animal a : listOfAnimals) {//should print "false true - false true - false true" because of the above changes
             System.out.println(a.isCarnivorous() + " " + a.isMammals());
         }
     }
