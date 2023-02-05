@@ -1,4 +1,5 @@
-class Frog extends Animal implements Water {
+class Frog extends Animal implements Water,Land
+{
     int numberOfLegs = 4;
 
     Frog(int mood) {
