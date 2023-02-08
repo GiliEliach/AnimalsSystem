@@ -6,9 +6,7 @@ class Frog extends Animal implements Water,Land
         super(false, false, mood);
     }
     //if we don't have the mood,initialize with 0
-    Frog() {
-        super(false, false, 0);
-    }
+
 
     @Override
 

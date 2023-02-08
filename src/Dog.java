@@ -15,7 +15,9 @@ class Dog extends Animal implements Land  {
     }
     //reaction of dog with input of mood
     public void sayHello(int mood) {
+
         try {
+            System.out.println("Wagging tail");
             if (mood == MOOD_HAPPY)
                 System.out.println("Barking loudly");
             else

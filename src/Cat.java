@@ -17,6 +17,7 @@ class Cat extends Animal implements Land  {
     //reaction of cat with input of mood
     public void sayHello(int mood) {
         try {
+            System.out.println("Meowing");
             if (mood == MOOD_HAPPY)
                 System.out.println("Purring");
             else
